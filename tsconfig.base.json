@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-exploration/ui-main-bar": ["shared/ui-main-bar/src/index.ts"],
+      "@nx-exploration/ui-main-menu": ["shared/ui-main-menu/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

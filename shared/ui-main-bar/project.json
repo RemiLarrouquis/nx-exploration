@@ -1,0 +1,21 @@
+{
+  "name": "ui-main-bar",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "shared/ui-main-bar/src",
+  "prefix": "shared",
+  "projectType": "library",
+  "tags": ["domain:shared"],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "shared/ui-main-bar/jest.config.ts",
+        "tsConfig": "shared/ui-main-bar/tsconfig.spec.json"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}
