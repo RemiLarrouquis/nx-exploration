@@ -13,7 +13,7 @@
             </div>
             <span
               class="h-8 w-8 inline-flex items-center justify-center rounded-full text-center"
-              [style]="{ 'background-color': meterItem.color1, color: '#ffffff' }"
+              [style]="{ 'background-color': meterItem.couleurDebut, color: '#ffffff' }"
             >
               <i [class]="meterItem.icon"></i>
             </span>
@@ -25,17 +25,19 @@
     <ng-template #meter let-value let-classInterne="class" let-width="size">
       <span
         [class]="classInterne"
-        [style]="{ background: 'linear-gradient(to right, ' + value.color1 + ', ' + value.color2 + ')', width: (value.value / 3) + '%' }"
+        [style]="{ background: 'linear-gradient(to right, ' + value.couleurDebut + ', ' + value.couleurFin + ')', width: (value.value / 3) + '%' }"
       ></span>
     </ng-template>
     <ng-template #start let-totalPercent="totalPercent">
       <div class="mt-4 mb-2 relative flex justify-between">
         <span>Avancement</span>
+        @if (totalPercent > 10) {
         <span
           [style]="{ width: Math.round(totalPercent / 3) + '%' }"
           class="absolute text-right"
           >{{ Math.round(totalPercent / 3) }}%</span
         >
+        }
       </div>
     </ng-template>
   </p-metergroup>

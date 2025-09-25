@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nx-exploration/data-suivi-avancement": [
+        "libs/global/data-suivi-avancement/src/index.ts"
+      ],
       "@nx-exploration/feature-avancement": [
         "libs/global/feature-avancement/src/index.ts"
       ],
