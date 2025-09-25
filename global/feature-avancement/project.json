@@ -1,0 +1,21 @@
+{
+  "name": "feature-avancement",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "global/feature-avancement/src",
+  "prefix": "global",
+  "projectType": "library",
+  "tags": ["domain:global"],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "global/feature-avancement/jest.config.ts",
+        "tsConfig": "global/feature-avancement/tsconfig.spec.json"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

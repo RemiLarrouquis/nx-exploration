@@ -27,6 +27,10 @@ export class UiMainMenu implements OnInit {
         label: 'Nx projects',
         icon: PrimeIcons.COG,
       },
+      {
+        label: 'Nx Cloud',
+        icon: PrimeIcons.CLOUD,
+      },
     ];
   }
 }
