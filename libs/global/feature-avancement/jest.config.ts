@@ -1,8 +1,8 @@
 export default {
-  displayName: 'ui-main-bar',
-  preset: '../../jest.preset.js',
+  displayName: 'feature-avancement',
+  preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/shared/ui-main-bar',
+  coverageDirectory: '../../../coverage/global/feature-avancement',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

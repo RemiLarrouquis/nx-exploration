@@ -16,10 +16,10 @@
     "baseUrl": ".",
     "paths": {
       "@nx-exploration/feature-avancement": [
-        "global/feature-avancement/src/index.ts"
+        "libs/global/feature-avancement/src/index.ts"
       ],
-      "@nx-exploration/ui-main-bar": ["shared/ui-main-bar/src/index.ts"],
-      "@nx-exploration/ui-main-menu": ["shared/ui-main-menu/src/index.ts"]
+      "@nx-exploration/ui-main-bar": ["libs/shared/ui-main-bar/src/index.ts"],
+      "@nx-exploration/ui-main-menu": ["libs/shared/ui-main-menu/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
