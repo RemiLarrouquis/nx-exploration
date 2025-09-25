@@ -1,0 +1,21 @@
+{
+  "name": "feature-liste-taches",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/architecture/feature-liste-taches/src",
+  "prefix": "architecture",
+  "projectType": "library",
+  "tags": ["domain:architecture"],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/architecture/feature-liste-taches/jest.config.ts",
+        "tsConfig": "libs/architecture/feature-liste-taches/tsconfig.spec.json"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

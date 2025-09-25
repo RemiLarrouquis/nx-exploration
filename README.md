@@ -52,9 +52,10 @@ To generate a new library, use:
 ```sh
 npx nx g @nx/angular:lib mylib
 
-npx nx g @nx/angular:library --directory=shared/ui-main-menu --lazy=true --parent=apps/nx-exploration/src/app/app.routes.ts --routing=true --changeDetection=OnPush --prefix=shared --tags=domain:shared
-npx nx g @nx/angular:library --directory=shared/ui-main-bar --lazy=true --parent=apps/nx-exploration/src/app/app.routes.ts --routing=true --changeDetection=OnPush --prefix=shared --tags=domain:shared
-npx nx g @nx/angular:library --directory=global/feature-avancement --lazy=true --parent=apps/nx-exploration/src/app/app.routes.ts --routing=true --changeDetection=OnPush --prefix=global --tags=domain:global
+npx nx g @nx/angular:library --directory=shared/ui-main-menu --parent=apps/nx-exploration/src/app/app.routes.ts --routing=true --changeDetection=OnPush --prefix=shared --tags=domain:shared
+npx nx g @nx/angular:library --directory=shared/ui-main-bar --parent=apps/nx-exploration/src/app/app.routes.ts --routing=true --changeDetection=OnPush --prefix=shared --tags=domain:shared
+npx nx g @nx/angular:library --directory=global/feature-avancement --parent=apps/nx-exploration/src/app/app.routes.ts --routing=true --changeDetection=OnPush --prefix=global --tags=domain:global
+npx nx g @nx/angular:library --directory=libs/architecture/feature-liste-taches --lazy=true --parent=apps/nx-exploration/src/app/app.routes.ts --routing=true --changeDetection=OnPush --flat=true --prefix=architecture --tags=domain:architecture
 ```
 
 You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.

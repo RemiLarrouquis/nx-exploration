@@ -1,40 +1,42 @@
-<p-metergroup [value]="avancement" labelPosition="start">
-  <ng-template #label>
-    <div class="gap-4 flex flex-wrap">
-      @for (meterItem of avancement; track meterItem.label) {
-      <p-card class="flex-1">
-        <div class="gap-8 flex justify-between">
-          <div class="gap-1 flex flex-col">
-            <span class="text-sm text-surface-500 dark:text-surface-400"
-              >{{ meterItem.label }}</span
+<div class="p-4 bg-sky-500 dark:bg-black rounded-2xl">
+  <p-metergroup [value]="avancement" labelPosition="start">
+    <ng-template #label>
+      <div class="gap-4 flex flex-wrap">
+        @for (meterItem of avancement; track meterItem.label) {
+        <p-card class="flex-1">
+          <div class="gap-8 flex justify-between">
+            <div class="gap-1 flex flex-col">
+              <span class="text-sm text-surface-500 dark:text-surface-400"
+                >{{ meterItem.label }}</span
+              >
+              <span class="text-lg font-bold">{{ meterItem.value }}%</span>
+            </div>
+            <span
+              class="h-8 w-8 inline-flex items-center justify-center rounded-full text-center"
+              [style]="{ 'background-color': meterItem.color1, color: '#ffffff' }"
             >
-            <span class="text-lg font-bold">{{ meterItem.value }}%</span>
+              <i [class]="meterItem.icon"></i>
+            </span>
           </div>
-          <span
-            class="h-8 w-8 inline-flex items-center justify-center rounded-full text-center"
-            [style]="{ 'background-color': meterItem.color1, color: '#ffffff' }"
-          >
-            <i [class]="meterItem.icon"></i>
-          </span>
-        </div>
-      </p-card>
-      }
-    </div>
-  </ng-template>
-  <ng-template #meter let-value let-classInterne="class" let-width="size">
-    <span
-      [class]="classInterne"
-      [style]="{ background: 'linear-gradient(to right, ' + value.color1 + ', ' + value.color2 + ')', width: (value.value / 3) + '%' }"
-    ></span>
-  </ng-template>
-  <ng-template #start let-totalPercent="totalPercent">
-    <div class="mt-4 mb-2 relative flex justify-between">
-      <span>Avancement</span>
+        </p-card>
+        }
+      </div>
+    </ng-template>
+    <ng-template #meter let-value let-classInterne="class" let-width="size">
       <span
-        [style]="{ width: Math.round(totalPercent / 3) + '%' }"
-        class="absolute text-right"
-        >{{ Math.round(totalPercent / 3) }}%</span
-      >
-    </div>
-  </ng-template>
-</p-metergroup>
+        [class]="classInterne"
+        [style]="{ background: 'linear-gradient(to right, ' + value.color1 + ', ' + value.color2 + ')', width: (value.value / 3) + '%' }"
+      ></span>
+    </ng-template>
+    <ng-template #start let-totalPercent="totalPercent">
+      <div class="mt-4 mb-2 relative flex justify-between">
+        <span>Avancement</span>
+        <span
+          [style]="{ width: Math.round(totalPercent / 3) + '%' }"
+          class="absolute text-right"
+          >{{ Math.round(totalPercent / 3) }}%</span
+        >
+      </div>
+    </ng-template>
+  </p-metergroup>
+</div>

@@ -11,6 +11,7 @@ import Aura from '@primeuix/themes/aura';
 export const appConfig: ApplicationConfig = {
   providers: [
     providePrimeNG({
+      ripple: true,
       theme: {
         preset: Aura,
         options: {
