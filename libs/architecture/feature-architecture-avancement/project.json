@@ -1,7 +1,7 @@
 {
-  "name": "feature-liste-taches",
+  "name": "feature-architecture-avancement",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/architecture/feature-liste-taches/src",
+  "sourceRoot": "libs/architecture/feature-architecture-avancement/src",
   "prefix": "architecture",
   "projectType": "library",
   "tags": ["domain:architecture"],
@@ -10,8 +10,8 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/architecture/feature-liste-taches/jest.config.ts",
-        "tsConfig": "libs/architecture/feature-liste-taches/tsconfig.spec.json"
+        "jestConfig": "libs/architecture/feature-architecture-avancement/jest.config.ts",
+        "tsConfig": "libs/architecture/feature-architecture-avancement/tsconfig.spec.json"
       }
     },
     "lint": {

@@ -18,11 +18,11 @@
       "@nx-exploration/data-suivi-avancement": [
         "libs/global/data-suivi-avancement/src/index.ts"
       ],
+      "@nx-exploration/feature-architecture-avancement": [
+        "libs/architecture/feature-architecture-avancement/src/index.ts"
+      ],
       "@nx-exploration/feature-avancement": [
         "libs/global/feature-avancement/src/index.ts"
-      ],
-      "@nx-exploration/feature-liste-taches": [
-        "libs/architecture/feature-liste-taches/src/index.ts"
       ],
       "@nx-exploration/ui-main-bar": ["libs/shared/ui-main-bar/src/index.ts"],
       "@nx-exploration/ui-main-menu": ["libs/shared/ui-main-menu/src/index.ts"]

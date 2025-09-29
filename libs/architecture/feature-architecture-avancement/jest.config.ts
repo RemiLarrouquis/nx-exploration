@@ -1,8 +1,9 @@
 export default {
-  displayName: 'feature-liste-taches',
+  displayName: 'feature-architecture-avancement',
   preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../../coverage/libs/architecture/feature-liste-taches',
+  coverageDirectory:
+    '../../../coverage/libs/architecture/feature-architecture-avancement',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

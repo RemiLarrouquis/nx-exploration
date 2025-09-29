@@ -25,10 +25,12 @@ export class FeatureAvancement implements OnInit {
   protected readonly Math = Math;
 
   avancement: CustomMeterItem[] = [];
+  totalExplorations = 1;
 
   private explorationService: ExplorationService = inject(ExplorationService);
 
   ngOnInit(): void {
+    this.totalExplorations = this.explorationService.totalElement();
     const expSignal = this.explorationService.consulter(
       DesignationExploration.SIGNAL,
     );

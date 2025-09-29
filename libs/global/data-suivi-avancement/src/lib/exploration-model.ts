@@ -12,11 +12,17 @@ export class Exploration {
     titre: string,
     description: string,
     objectifFinal: Objectif,
+    objectifs: Objectif[] = [],
   ) {
     this.designation = designation;
     this.titre = titre;
     this.description = description;
+    this.objectifs = objectifs;
     this.objectifs.push(objectifFinal);
+  }
+
+  recupererObjectifs(): Objectif[] {
+    return this.objectifs;
   }
 
   ajouterObjectif(objectif: Objectif) {
@@ -26,6 +32,6 @@ export class Exploration {
   completion(): number {
     const nombre = this.objectifs.length;
     const nombreAccompli = this.objectifs.filter((o) => o.accompli).length;
-    return (nombreAccompli / nombre) * 100;
+    return Math.round((nombreAccompli / nombre) * 100);
   }
 }

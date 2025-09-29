@@ -1,6 +1,8 @@
 import { Exploration } from './exploration-model';
 import { Objectif } from './objectif-model';
 import { DesignationExploration } from './designation-exploration';
+import { explorationInitSignal } from './exploration-init-signals';
+import { explorationInitArchitecture } from './exploration-init-architecture';
 
 export const initialisationExplorations: Exploration[] = [
   new Exploration(
@@ -10,7 +12,9 @@ export const initialisationExplorations: Exploration[] = [
     new Objectif(
       'Maitriser les bases',
       "Comprendre un signal, l'utiliser et savoir éviter les pièges",
+      false,
     ),
+    explorationInitSignal,
   ),
   new Exploration(
     DesignationExploration.ARCHITECTURE,
@@ -20,6 +24,7 @@ export const initialisationExplorations: Exploration[] = [
       'Architecture validée',
       "La mise en place de l'architecture est un succès et le résultat est satisfaisant.",
     ),
+    explorationInitArchitecture,
   ),
   new Exploration(
     DesignationExploration.NX_PROJECT,

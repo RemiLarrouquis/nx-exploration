@@ -7,6 +7,10 @@ import { Exploration } from './exploration-model';
   providedIn: 'root',
 })
 export class ExplorationService {
+  totalElement(): number {
+    return initialisationExplorations.length;
+  }
+
   consulter(designation: DesignationExploration): Exploration {
     const find = initialisationExplorations.find(
       (e) => e.designation === designation,

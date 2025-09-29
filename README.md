@@ -55,7 +55,7 @@ npx nx g @nx/angular:lib mylib
 npx nx g @nx/angular:library --directory=shared/ui-main-menu --parent=apps/nx-exploration/src/app/app.routes.ts --routing=true --changeDetection=OnPush --prefix=shared --tags=domain:shared
 npx nx g @nx/angular:library --directory=shared/ui-main-bar --parent=apps/nx-exploration/src/app/app.routes.ts --routing=true --changeDetection=OnPush --prefix=shared --tags=domain:shared
 npx nx g @nx/angular:library --directory=global/feature-avancement --parent=apps/nx-exploration/src/app/app.routes.ts --routing=true --changeDetection=OnPush --prefix=global --tags=domain:global
-npx nx g @nx/angular:library --directory=libs/architecture/feature-liste-taches --lazy=true --parent=apps/nx-exploration/src/app/app.routes.ts --routing=true --changeDetection=OnPush --flat=true --prefix=architecture --tags=domain:architecture
+npx nx g @nx/angular:library --directory=libs/architecture/feature-architecture-avancement --lazy=true --parent=apps/nx-exploration/src/app/app.routes.ts --routing=true --changeDetection=OnPush --flat=true --prefix=architecture --tags=domain:architecture
 npx nx g @nx/angular:library --directory=libs/global/data-suivi-avancement --changeDetection=OnPush --flat=true --prefix=global --tags=domain:global,type:data
 ```
 

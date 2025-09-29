@@ -25,7 +25,7 @@
     <ng-template #meter let-value let-classInterne="class" let-width="size">
       <span
         [class]="classInterne"
-        [style]="{ background: 'linear-gradient(to right, ' + value.couleurDebut + ', ' + value.couleurFin + ')', width: (value.value / 3) + '%' }"
+        [style]="{ background: 'linear-gradient(to right, ' + value.couleurDebut + ', ' + value.couleurFin + ')', width: (value.value / totalExplorations) + '%' }"
       ></span>
     </ng-template>
     <ng-template #start let-totalPercent="totalPercent">
@@ -33,9 +33,9 @@
         <span>Avancement</span>
         @if (totalPercent > 10) {
         <span
-          [style]="{ width: Math.round(totalPercent / 3) + '%' }"
+          [style]="{ width: Math.round(totalPercent / totalExplorations) + '%' }"
           class="absolute text-right"
-          >{{ Math.round(totalPercent / 3) }}%</span
+          >{{ Math.round(totalPercent / totalExplorations) }}%</span
         >
         }
       </div>
