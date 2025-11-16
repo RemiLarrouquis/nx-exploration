@@ -1,0 +1,21 @@
+{
+  "name": "layout-ui-main-bar",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs-base/layout-ui-main-bar/src",
+  "prefix": "layout",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs-base/layout-ui-main-bar/jest.config.ts",
+        "tsConfig": "libs-base/layout-ui-main-bar/tsconfig.spec.json"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

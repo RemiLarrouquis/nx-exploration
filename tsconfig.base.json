@@ -16,16 +16,20 @@
     "baseUrl": ".",
     "paths": {
       "@nx-exploration/data-suivi-avancement": [
-        "libs/global/data-suivi-avancement/src/index.ts"
+        "libs/pilotage/data-suivi-avancement/src/index.ts"
       ],
       "@nx-exploration/feature-architecture-avancement": [
         "libs/architecture/feature-architecture-avancement/src/index.ts"
       ],
       "@nx-exploration/feature-avancement": [
-        "libs/global/feature-avancement/src/index.ts"
+        "libs/pilotage/feature-avancement/src/index.ts"
       ],
-      "@nx-exploration/ui-main-bar": ["libs/shared/ui-main-bar/src/index.ts"],
-      "@nx-exploration/ui-main-menu": ["libs/shared/ui-main-menu/src/index.ts"]
+      "@nx-exploration/layout-ui-main-bar": [
+        "libs-base/layout-ui-main-bar/src/index.ts"
+      ],
+      "@nx-exploration/layout-ui-main-menu": [
+        "libs-base/layout-ui-main-menu/src/index.ts"
+      ],
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { UiMainMenu } from '@nx-exploration/ui-main-menu';
-import { UiMainBar } from '@nx-exploration/ui-main-bar';
 import { FeatureAvancement } from '@nx-exploration/feature-avancement';
+import { LayoutUiMainBar } from '@nx-exploration/layout-ui-main-bar';
+import { LayoutUiMainMenu } from '@nx-exploration/layout-ui-main-menu';
 
 @Component({
-  imports: [RouterModule, UiMainMenu, UiMainBar, FeatureAvancement],
+  imports: [RouterModule, FeatureAvancement, LayoutUiMainBar, LayoutUiMainMenu],
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.css',

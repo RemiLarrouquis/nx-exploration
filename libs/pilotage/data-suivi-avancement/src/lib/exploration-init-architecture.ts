@@ -3,7 +3,7 @@ import { Objectif } from './objectif-model';
 export const explorationInitArchitecture: Objectif[] = [
   new Objectif(
     'Arborescence des dossier',
-    'Essayer une arborescence simple. Un domaine, plusieurs libs précédés de la mention data / feature / ui / utils',
+    "Essayer une arborescence simple. Un domaine, suivi d'une catégorie data / feature / ui / utils, et enfin une description",
     true,
   ),
   new Objectif(

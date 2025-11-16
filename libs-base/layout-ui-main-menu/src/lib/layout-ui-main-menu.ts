@@ -1,16 +1,14 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { MegaMenuItem, PrimeIcons } from 'primeng/api';
-import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
 import { Dock } from 'primeng/dock';
+import { MegaMenuItem, PrimeIcons } from 'primeng/api';
 
 @Component({
-  selector: 'shared-ui-main-menu',
-  imports: [CommonModule, Dock],
-  templateUrl: './ui-main-menu.html',
-  styleUrl: './ui-main-menu.css',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  selector: 'layout-layout-ui-main-menu',
+  imports: [Dock],
+  templateUrl: './layout-ui-main-menu.html',
+  styleUrl: './layout-ui-main-menu.css',
 })
-export class UiMainMenu implements OnInit {
+export class LayoutUiMainMenu implements OnInit {
   items: MegaMenuItem[] | undefined;
 
   ngOnInit() {
