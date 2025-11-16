@@ -15,8 +15,17 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nx-exploration/architecture-feature-avancement": [
+        "libs/pilotage/architecture-feature-avancement/src/index.ts"
+      ],
+      "@nx-exploration/avancement-feature-synthese": [
+        "libs/pilotage/avancement-feature-synthese/src/index.ts"
+      ],
       "@nx-exploration/data-suivi-avancement": [
         "libs/pilotage/data-suivi-avancement/src/index.ts"
+      ],
+      "@nx-exploration/exploration-data": [
+        "libs/exploration-data/src/index.ts"
       ],
       "@nx-exploration/feature-architecture-avancement": [
         "libs/architecture/feature-architecture-avancement/src/index.ts"
@@ -29,7 +38,7 @@
       ],
       "@nx-exploration/layout-ui-main-menu": [
         "libs-base/layout-ui-main-menu/src/index.ts"
-      ],
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

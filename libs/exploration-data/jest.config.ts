@@ -1,8 +1,8 @@
 export default {
-  displayName: 'data-suivi-avancement',
-  preset: '../../../jest.preset.js',
+  displayName: 'exploration-data',
+  preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../../coverage/libs/global/data-suivi-avancement',
+  coverageDirectory: '../../coverage/libs/exploration-data',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

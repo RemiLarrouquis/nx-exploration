@@ -1,17 +1,17 @@
 {
-  "name": "feature-avancement",
+  "name": "avancement-feature-synthese",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "global/feature-avancement/src",
-  "prefix": "global",
+  "sourceRoot": "libs/pilotage/avancement-feature-synthese/src",
+  "prefix": "pilotage",
   "projectType": "library",
-  "tags": ["domain:global"],
+  "tags": [],
   "targets": {
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/global/feature-avancement/jest.config.ts",
-        "tsConfig": "libs/global/feature-avancement/tsconfig.spec.json"
+        "jestConfig": "libs/pilotage/avancement-feature-synthese/jest.config.ts",
+        "tsConfig": "libs/pilotage/avancement-feature-synthese/tsconfig.spec.json"
       }
     },
     "lint": {

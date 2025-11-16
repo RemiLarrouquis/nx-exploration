@@ -4,12 +4,12 @@ export const appRoutes: Route[] = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'feature-architecture-avancement',
+    redirectTo: 'architecture-feature-avancement',
   },
   {
     path: 'feature-architecture-avancement',
     loadChildren: () =>
-      import('@nx-exploration/feature-architecture-avancement').then(
+      import('@nx-exploration/architecture-feature-avancement').then(
         (m) => m.featureArchitectureAvancementRoutes,
       ),
   },

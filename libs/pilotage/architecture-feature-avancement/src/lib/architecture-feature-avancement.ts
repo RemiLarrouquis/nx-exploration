@@ -8,18 +8,17 @@ import {
   DesignationExploration,
   ExplorationService,
   Objectif,
-} from '@nx-exploration/data-suivi-avancement';
-import { CommonModule } from '@angular/common';
+} from '@nx-exploration/exploration-data';
 import { TableModule } from 'primeng/table';
 
 @Component({
-  selector: 'architecture-feature-architecture-avancement',
-  imports: [CommonModule, TableModule],
-  templateUrl: './feature-architecture-avancement.html',
-  styleUrl: './feature-architecture-avancement.css',
+  selector: 'pilotage-architecture-feature-avancement',
+  imports: [TableModule],
+  templateUrl: './architecture-feature-avancement.html',
+  styleUrl: './architecture-feature-avancement.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class FeatureArchitectureAvancement implements OnInit {
+export class ArchitectureFeatureAvancement implements OnInit {
   objectifs: Objectif[] = [];
 
   explorationService = inject(ExplorationService);

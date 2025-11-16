@@ -1,9 +1,9 @@
 export default {
-  displayName: 'feature-architecture-avancement',
+  displayName: 'avancement-feature-synthese',
   preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   coverageDirectory:
-    '../../../coverage/libs/architecture/feature-architecture-avancement',
+    '../../../coverage/libs/pilotage/avancement-feature-synthese',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

@@ -4,24 +4,23 @@ import {
   inject,
   OnInit,
 } from '@angular/core';
+import { Card } from 'primeng/card';
 import { MeterGroup } from 'primeng/metergroup';
 import { PrimeIcons } from 'primeng/api';
-import { CommonModule } from '@angular/common';
-import { Card } from 'primeng/card';
+import { CustomMeterItem } from './custom-meter-item';
 import {
   DesignationExploration,
   ExplorationService,
-} from '@nx-exploration/data-suivi-avancement';
-import { CustomMeterItem } from './custom-meter-item';
+} from '@nx-exploration/exploration-data';
 
 @Component({
-  selector: 'global-feature-avancement',
-  imports: [CommonModule, MeterGroup, Card],
-  templateUrl: './feature-avancement.html',
-  styleUrl: './feature-avancement.css',
+  selector: 'pilotage-avancement-feature-synthese',
+  imports: [Card, MeterGroup],
+  templateUrl: './avancement-feature-synthese.html',
+  styleUrl: './avancement-feature-synthese.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class FeatureAvancement implements OnInit {
+export class AvancementFeatureSynthese implements OnInit {
   protected readonly Math = Math;
 
   avancement: CustomMeterItem[] = [];
