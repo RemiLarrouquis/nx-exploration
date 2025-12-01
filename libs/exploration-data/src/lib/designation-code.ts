@@ -1,4 +1,4 @@
-export enum DesignationExploration {
+export enum DesignationCode {
   SIGNAL = 'SIGNAL',
   ARCHITECTURE = 'ARCHITECTURE',
   NX_PROJECT = 'NX_PROJECT',

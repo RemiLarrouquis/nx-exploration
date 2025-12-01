@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { initialisationExplorations } from './exploration-init';
-import { DesignationExploration } from './designation-exploration';
 import { Exploration } from './exploration-model';
+import { DesignationCode } from './designation-code';
 
 @Injectable({
   providedIn: 'root',
@@ -11,9 +11,13 @@ export class ExplorationService {
     return initialisationExplorations.length;
   }
 
-  consulter(designation: DesignationExploration): Exploration {
+  lister(): Exploration[] {
+    return initialisationExplorations;
+  }
+
+  consulter(codeDesignation: DesignationCode): Exploration {
     const find = initialisationExplorations.find(
-      (e) => e.designation === designation,
+      (e) => e.designation.code === codeDesignation,
     );
     if (find) {
       return find;

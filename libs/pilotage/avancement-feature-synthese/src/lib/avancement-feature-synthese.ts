@@ -6,10 +6,9 @@ import {
 } from '@angular/core';
 import { Card } from 'primeng/card';
 import { MeterGroup } from 'primeng/metergroup';
-import { PrimeIcons } from 'primeng/api';
 import { CustomMeterItem } from './custom-meter-item';
 import {
-  DesignationExploration,
+  Exploration,
   ExplorationService,
 } from '@nx-exploration/exploration-data';
 
@@ -30,49 +29,25 @@ export class AvancementFeatureSynthese implements OnInit {
 
   ngOnInit(): void {
     this.totalExplorations = this.explorationService.totalElement();
-    const expSignal = this.explorationService.consulter(
-      DesignationExploration.SIGNAL,
-    );
-    const expArchi = this.explorationService.consulter(
-      DesignationExploration.ARCHITECTURE,
-    );
-    const expProject = this.explorationService.consulter(
-      DesignationExploration.NX_PROJECT,
-    );
-    const expCloud = this.explorationService.consulter(
-      DesignationExploration.NX_CLOUD,
-    );
-    this.avancement.push(
-      ...[
-        {
-          label: expSignal.titre,
-          couleurDebut: '#fbbf24',
-          couleurFin: '#34d399',
-          value: expSignal.completion(),
-          icon: PrimeIcons.BOLT,
-        },
-        {
-          label: expArchi.titre,
-          couleurDebut: '#34d399',
-          couleurFin: '#245afb',
-          value: expArchi.completion(),
-          icon: PrimeIcons.BUILDING_COLUMNS,
-        },
-        {
-          label: expProject.titre,
-          couleurDebut: '#245afb',
-          couleurFin: '#fa606d',
-          value: expProject.completion(),
-          icon: PrimeIcons.COG,
-        },
-        {
-          label: expCloud.titre,
-          couleurDebut: '#fa606d',
-          couleurFin: '#fbbf24',
-          value: expCloud.completion(),
-          icon: PrimeIcons.CLOUD,
-        },
-      ],
-    );
+    console.log(this.totalExplorations);
+    this.explorationService
+      .lister()
+      .forEach((exploration: Exploration, index: number) => {
+        let indexSuivant = index + 1;
+        if (indexSuivant >= this.totalExplorations) {
+          indexSuivant = 0;
+        }
+
+        console.log(indexSuivant);
+        console.log(exploration.designation.code);
+        this.avancement.push({
+          label: exploration.titre,
+          couleurDebut: exploration.designation.couleur,
+          couleurFin:
+            this.explorationService.lister()[indexSuivant].designation.couleur,
+          value: exploration.completion(),
+          icon: exploration.designation.icon,
+        });
+      });
   }
 }

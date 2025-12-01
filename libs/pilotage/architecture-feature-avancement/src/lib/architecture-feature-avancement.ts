@@ -5,7 +5,7 @@ import {
   OnInit,
 } from '@angular/core';
 import {
-  DesignationExploration,
+  DesignationCode,
   ExplorationService,
   Objectif,
 } from '@nx-exploration/exploration-data';
@@ -25,7 +25,7 @@ export class ArchitectureFeatureAvancement implements OnInit {
 
   ngOnInit(): void {
     this.objectifs = this.explorationService
-      .consulter(DesignationExploration.ARCHITECTURE)
+      .consulter(DesignationCode.ARCHITECTURE)
       .recupererObjectifs();
   }
 }

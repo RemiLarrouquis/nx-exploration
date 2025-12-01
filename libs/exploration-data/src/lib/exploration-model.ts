@@ -1,14 +1,14 @@
 import { Objectif } from './objectif-model';
-import { DesignationExploration } from './designation-exploration';
+import { Designation } from './designation-model';
 
 export class Exploration {
-  designation: DesignationExploration;
+  designation: Designation;
   titre: string;
   description: string;
   objectifs: Objectif[] = [];
 
   constructor(
-    designation: DesignationExploration,
+    designation: Designation,
     titre: string,
     description: string,
     objectifFinal: Objectif,
