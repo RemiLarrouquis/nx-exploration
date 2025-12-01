@@ -7,7 +7,11 @@
     }
   </ng-template>
   <ng-template #content let-event>
-    <p-card [header]="event.titre">
+    <p-card
+      [header]="event.titre"
+      [class.bg-green-50]="event.accompli"
+      [class.bg-gray-50]="!event.accompli"
+    >
       <p>{{ event.description }}</p>
     </p-card>
   </ng-template>
