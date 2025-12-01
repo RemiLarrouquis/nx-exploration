@@ -29,7 +29,6 @@ export class AvancementFeatureSynthese implements OnInit {
 
   ngOnInit(): void {
     this.totalExplorations = this.explorationService.totalElement();
-    console.log(this.totalExplorations);
     this.explorationService
       .lister()
       .forEach((exploration: Exploration, index: number) => {
@@ -37,9 +36,6 @@ export class AvancementFeatureSynthese implements OnInit {
         if (indexSuivant >= this.totalExplorations) {
           indexSuivant = 0;
         }
-
-        console.log(indexSuivant);
-        console.log(exploration.designation.code);
         this.avancement.push({
           label: exploration.titre,
           couleurDebut: exploration.designation.couleur,

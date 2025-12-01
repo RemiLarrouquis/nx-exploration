@@ -1,0 +1,14 @@
+<p-timeline [value]="valeurs()" align="alternate">
+  <ng-template #marker let-event>
+    @if (event.accompli) {
+    <span class="text-green-500"><i class="pi pi-check-circle"></i></span>
+    } @else {
+    <span class="text-gray-400"><i class="pi pi-ellipsis-h"></i></span>
+    }
+  </ng-template>
+  <ng-template #content let-event>
+    <p-card [header]="event.titre">
+      <p>{{ event.description }}</p>
+    </p-card>
+  </ng-template>
+</p-timeline>

@@ -10,10 +10,16 @@ import {
   Objectif,
 } from '@nx-exploration/exploration-data';
 import { TableModule } from 'primeng/table';
+import { AvancementFeatureSynthese } from '@nx-exploration/avancement-feature-synthese';
+import { AvancementUiTimelineObjectifs } from '@nx-exploration/avancement-ui-timeline-objectifs';
 
 @Component({
   selector: 'pilotage-architecture-feature-avancement',
-  imports: [TableModule],
+  imports: [
+    TableModule,
+    AvancementFeatureSynthese,
+    AvancementUiTimelineObjectifs,
+  ],
   templateUrl: './architecture-feature-avancement.html',
   styleUrl: './architecture-feature-avancement.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

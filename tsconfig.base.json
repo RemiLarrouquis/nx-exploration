@@ -21,6 +21,9 @@
       "@nx-exploration/avancement-feature-synthese": [
         "libs/pilotage/avancement-feature-synthese/src/index.ts"
       ],
+      "@nx-exploration/avancement-ui-timeline-objectifs": [
+        "libs/pilotage/avancement-ui-timeline-objectifs/src/index.ts"
+      ],
       "@nx-exploration/data-suivi-avancement": [
         "libs/pilotage/data-suivi-avancement/src/index.ts"
       ],

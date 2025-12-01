@@ -1,16 +1,3 @@
-<p-table [value]="objectifs" [tableStyle]="{ 'min-width': '50rem' }">
-  <ng-template #header>
-    <tr>
-      <th>Titre</th>
-      <th>Description</th>
-      <th>Completion</th>
-    </tr>
-  </ng-template>
-  <ng-template #body let-product>
-    <tr>
-      <td>{{ product.titre }}</td>
-      <td>{{ product.description }}</td>
-      <td>{{ product.completion }}</td>
-    </tr>
-  </ng-template>
-</p-table>
+<pilotage-avancement-ui-timeline-objectifs
+  [valeurs]="objectifs"
+></pilotage-avancement-ui-timeline-objectifs>

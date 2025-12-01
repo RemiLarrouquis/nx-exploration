@@ -50,13 +50,7 @@ npx nx g @nx/angular:app demo
 To generate a new library, use:
 
 ```sh
-npx nx g @nx/angular:lib mylib
-
-npx nx g @nx/angular:library --directory=shared/ui-main-menu --parent=apps/nx-exploration/src/app/app.routes.ts --routing=true --changeDetection=OnPush --prefix=shared --tags=domain:shared
-npx nx g @nx/angular:library --directory=shared/ui-main-bar --parent=apps/nx-exploration/src/app/app.routes.ts --routing=true --changeDetection=OnPush --prefix=shared --tags=domain:shared
-npx nx g @nx/angular:library --directory=global/feature-avancement --parent=apps/nx-exploration/src/app/app.routes.ts --routing=true --changeDetection=OnPush --prefix=global --tags=domain:global
-npx nx g @nx/angular:library --directory=libs/architecture/feature-architecture-avancement --lazy=true --parent=apps/nx-exploration/src/app/app.routes.ts --routing=true --changeDetection=OnPush --flat=true --prefix=architecture --tags=domain:architecture
-npx nx g @nx/angular:library --directory=libs/global/data-suivi-avancement --changeDetection=OnPush --flat=true --prefix=global --tags=domain:global,type:data
+npx nx g @nx/angular:library --directory=libs/pilotage/avancement-ui-timeline-objectifs --changeDetection=OnPush --flat=true --selector=avancement
 ```
 
 You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
