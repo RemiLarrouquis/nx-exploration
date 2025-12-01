@@ -43,6 +43,7 @@ export const initialisationExplorations: Exploration[] = [
     new Objectif(
       'Architecture validée',
       "La mise en place de l'architecture est un succès et le résultat est satisfaisant.",
+      true,
     ),
     explorationInitArchitecture,
   ),

@@ -3,7 +3,7 @@
     <ng-template #label>
       <div class="gap-4 flex flex-wrap">
         @for (meterItem of avancement; track meterItem.label) {
-        <p-card class="flex-1">
+        <p-card class="flex-1" [class.bg-blue-100]="meterItem.value === 100">
           <div class="gap-8 flex justify-between">
             <div class="gap-1 flex flex-col">
               <span class="text-sm text-surface-500 dark:text-surface-400"

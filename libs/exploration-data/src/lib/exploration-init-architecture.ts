@@ -9,5 +9,6 @@ export const explorationInitArchitecture: Objectif[] = [
   new Objectif(
     'Hierarchie des domaines',
     'Héritage entre domaines. Est-ce une bonne pratique ? Peut-on avoir une protection (tags Nx) ?',
+    true,
   ),
 ];
