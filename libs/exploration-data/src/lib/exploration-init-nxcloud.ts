@@ -7,4 +7,10 @@ export const explorationInitNxCloud: Objectif[] = [
     "Quels sont les avantages afin d'identifier une erreur",
   ),
   new Objectif('Local binding Nx Cloud', 'Ressenti et avantages ?'),
+  new Objectif(
+    'Local binding - Execution des tests',
+    'Ressenti et avantages ?',
+    true,
+    'Exécution très rapide, interface en ligne de commande mais très propre et claire. (voir nxcloud-cmd-test-execution.png)',
+  ),
 ];

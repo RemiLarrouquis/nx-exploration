@@ -11,7 +11,9 @@ describe('AvancementUiTimelineObjectifs', () => {
     }).compileComponents();
 
     fixture = TestBed.createComponent(AvancementUiTimelineObjectifs);
+    fixture.componentRef.setInput('valeurs', []);
     component = fixture.componentInstance;
+
     fixture.detectChanges();
   });
 
