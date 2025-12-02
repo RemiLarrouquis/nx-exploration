@@ -15,6 +15,12 @@ export class ExplorationService {
     return initialisationExplorations;
   }
 
+  listerNonComplete(): Exploration[] {
+    return initialisationExplorations.filter(
+      (exploration) => exploration.completion() < 100,
+    );
+  }
+
   consulter(codeDesignation: DesignationCode): Exploration {
     const find = initialisationExplorations.find(
       (e) => e.designation.code === codeDesignation,

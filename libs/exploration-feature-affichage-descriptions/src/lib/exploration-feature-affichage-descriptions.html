@@ -1,1 +1,11 @@
-<p>ExplorationFeatureAffichageDescriptions works!</p>
+<div class="gap-6 flex flex-col">
+  @for (exploration of explorations; track $index) {
+  <h2>{{ exploration.titre }}</h2>
+  <p>{{ exploration.description}}</p>
+  <pilotage-avancement-ui-timeline-objectifs
+    [desactiverAnimation]="$index === 0"
+    [valeurs]="exploration.objectifs"
+  ></pilotage-avancement-ui-timeline-objectifs>
+  <p-divider></p-divider>
+  }
+</div>

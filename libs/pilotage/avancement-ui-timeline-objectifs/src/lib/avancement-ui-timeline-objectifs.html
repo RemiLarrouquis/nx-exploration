@@ -7,12 +7,18 @@
     }
   </ng-template>
   <ng-template #content let-event>
-    <p-card
-      [header]="event.titre"
-      [class.bg-green-50]="event.accompli"
-      [class.bg-gray-50]="!event.accompli"
+    <div
+      #animationOnScroll
+      pAnimateOnScroll
+      enterClass="animate-enter fade-in-10 slide-in-from-b-8 animate-duration-1000"
     >
-      <p>{{ event.description }}</p>
-    </p-card>
+      <p-card
+        [header]="event.titre"
+        [class.bg-green-50]="event.accompli"
+        [class.bg-gray-50]="!event.accompli"
+      >
+        <p>{{ event.description }}</p>
+      </p-card>
+    </div>
   </ng-template>
 </p-timeline>

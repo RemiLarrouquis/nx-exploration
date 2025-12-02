@@ -13,6 +13,7 @@ export const explorationInitSignal: Objectif[] = [
   new Objectif(
     'Composant : gestion des inputs par signal',
     'Simple input, requis ou non requis',
+    true,
   ),
   new Objectif(
     'Composant : gestion des inputs par signal',
