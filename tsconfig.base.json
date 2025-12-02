@@ -41,6 +41,9 @@
       ],
       "@nx-exploration/layout-ui-main-menu": [
         "libs-base/layout-ui-main-menu/src/index.ts"
+      ],
+      "@nx-exploration/signal-feature-avancement": [
+        "libs/pilotage/signal-feature-avancement/src/index.ts"
       ]
     }
   },

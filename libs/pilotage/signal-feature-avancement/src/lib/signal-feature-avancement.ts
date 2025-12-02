@@ -12,20 +12,20 @@ import {
 import { AvancementUiTimelineObjectifs } from '@nx-exploration/avancement-ui-timeline-objectifs';
 
 @Component({
-  selector: 'pilotage-architecture-feature-avancement',
+  selector: 'signal-signal-feature-avancement',
   imports: [AvancementUiTimelineObjectifs],
-  templateUrl: './architecture-feature-avancement.html',
-  styleUrl: './architecture-feature-avancement.css',
+  templateUrl: './signal-feature-avancement.html',
+  styleUrl: './signal-feature-avancement.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ArchitectureFeatureAvancement implements OnInit {
+export class SignalFeatureAvancement implements OnInit {
   objectifs: Objectif[] = [];
 
   explorationService = inject(ExplorationService);
 
   ngOnInit(): void {
     this.objectifs = this.explorationService
-      .consulter(DesignationCode.ARCHITECTURE)
+      .consulter(DesignationCode.SIGNAL)
       .recupererObjectifs();
   }
 }
