@@ -11,11 +11,10 @@ import {
   Exploration,
   ExplorationService,
 } from '@nx-exploration/exploration-data';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'pilotage-avancement-feature-synthese',
-  imports: [Card, MeterGroup, RouterLink],
+  imports: [Card, MeterGroup],
   templateUrl: './avancement-feature-synthese.html',
   styleUrl: './avancement-feature-synthese.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

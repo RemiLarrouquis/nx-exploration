@@ -1,4 +1,4 @@
-<div class="p-4 bg-sky-200 dark:bg-black rounded-2xl">
+<div class="p-4 rounded-2xl">
   <p-metergroup [value]="avancement" labelPosition="start">
     <ng-template #label>
       <div class="gap-4 flex flex-wrap">
@@ -24,6 +24,7 @@
     </ng-template>
     <ng-template #meter let-value let-classInterne="class" let-width="size">
       <span
+        class="rounded-sm ml-px"
         [class]="classInterne"
         [style]="{ background: 'linear-gradient(to right, ' + value.couleurDebut + ', ' + value.couleurFin + ')', width: (value.value / totalExplorations) + '%' }"
       ></span>

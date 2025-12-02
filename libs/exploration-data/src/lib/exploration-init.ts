@@ -63,8 +63,8 @@ export const initialisationExplorations: Exploration[] = [
       '#d460fa',
       PrimeIcons.HEART_FILL,
     ),
-    'Nx Gradle',
-    'NX x Gradle love storie',
+    'Nx 💞 Gradle',
+    'NX / Gradle love story',
     new Objectif(
       'Production de livrable',
       'On build en angular on produit en java',
