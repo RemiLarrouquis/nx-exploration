@@ -2,16 +2,9 @@ import { Route } from '@angular/router';
 
 export const appRoutes: Route[] = [
   {
-    path: 'exploration-feature-affichage-descriptions',
-    loadChildren: () =>
-      import('@nx-exploration/exploration-feature-affichage-descriptions').then(
-        (m) => m.explorationFeatureAffichageDescriptionsRoutes,
-      ),
-  },
-  {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'architecture-feature-avancement',
+    redirectTo: 'exploration-feature-affichage-descriptions',
   },
   {
     path: 'feature-architecture-avancement',
@@ -19,5 +12,16 @@ export const appRoutes: Route[] = [
       import('@nx-exploration/architecture-feature-avancement').then(
         (m) => m.featureArchitectureAvancementRoutes,
       ),
+  },
+  {
+    path: 'exploration-feature-affichage-descriptions',
+    loadChildren: () =>
+      import('@nx-exploration/exploration-feature-affichage-descriptions').then(
+        (m) => m.explorationFeatureAffichageDescriptionsRoutes,
+      ),
+  },
+  {
+    path: '**',
+    redirectTo: 'exploration-feature-affichage-descriptions',
   },
 ];
