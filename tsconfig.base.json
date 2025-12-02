@@ -30,6 +30,9 @@
       "@nx-exploration/exploration-data": [
         "libs/exploration-data/src/index.ts"
       ],
+      "@nx-exploration/exploration-feature-affichage-descriptions": [
+        "libs/exploration-feature-affichage-descriptions/src/index.ts"
+      ],
       "@nx-exploration/feature-architecture-avancement": [
         "libs/architecture/feature-architecture-avancement/src/index.ts"
       ],
