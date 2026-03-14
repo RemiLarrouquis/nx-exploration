@@ -204,6 +204,104 @@
       "subject": "Integration gemini"
     },
     "targetVersion": "latest",
-    "confirmedPackageUpdates": true
+    "confirmedPackageUpdates": true,
+    "runningMigrations": [
+      "update-module-resolution-22-2-0"
+    ],
+    "completedMigrations": {
+      "22-0-0-release-version-config-changes": {
+        "type": "successful",
+        "name": "22-0-0-release-version-config-changes",
+        "changedFiles": [],
+        "ref": "2eae3ed2e1be25917c0c70dcba2640ae9ee1237b",
+        "nextSteps": []
+      },
+      "22-0-0-consolidate-release-tag-config": {
+        "type": "successful",
+        "name": "22-0-0-consolidate-release-tag-config",
+        "changedFiles": [],
+        "ref": "2eae3ed2e1be25917c0c70dcba2640ae9ee1237b",
+        "nextSteps": []
+      },
+      "22-1-0-update-nx-wrapper": {
+        "type": "successful",
+        "name": "22-1-0-update-nx-wrapper",
+        "changedFiles": [],
+        "ref": "2eae3ed2e1be25917c0c70dcba2640ae9ee1237b",
+        "nextSteps": []
+      },
+      "remove-external-options-from-js-executors": {
+        "type": "successful",
+        "name": "remove-external-options-from-js-executors",
+        "changedFiles": [],
+        "ref": "2eae3ed2e1be25917c0c70dcba2640ae9ee1237b",
+        "nextSteps": []
+      },
+      "remove-redundant-ts-project-references": {
+        "type": "successful",
+        "name": "remove-redundant-ts-project-references",
+        "changedFiles": [],
+        "ref": "2eae3ed2e1be25917c0c70dcba2640ae9ee1237b",
+        "nextSteps": []
+      },
+      "update-angular-cli-version-20-3-0": {
+        "type": "successful",
+        "name": "update-angular-cli-version-20-3-0",
+        "changedFiles": [],
+        "ref": "2eae3ed2e1be25917c0c70dcba2640ae9ee1237b",
+        "nextSteps": []
+      },
+      "update-ssr-webpack-config-22-2-0": {
+        "type": "successful",
+        "name": "update-ssr-webpack-config-22-2-0",
+        "changedFiles": [],
+        "ref": "2eae3ed2e1be25917c0c70dcba2640ae9ee1237b",
+        "nextSteps": []
+      },
+      "update-module-resolution-22-2-0": {
+        "type": "successful",
+        "name": "update-module-resolution-22-2-0",
+        "changedFiles": [
+          {
+            "path": "libs/exploration-feature-affichage-descriptions/tsconfig.spec.json",
+            "type": "UPDATE"
+          },
+          {
+            "path": "libs/pilotage/avancement-ui-timeline-objectifs/tsconfig.spec.json",
+            "type": "UPDATE"
+          },
+          {
+            "path": "libs/pilotage/architecture-feature-avancement/tsconfig.spec.json",
+            "type": "UPDATE"
+          },
+          {
+            "path": "libs/pilotage/avancement-feature-synthese/tsconfig.spec.json",
+            "type": "UPDATE"
+          },
+          {
+            "path": "libs/pilotage/signal-feature-avancement/tsconfig.spec.json",
+            "type": "UPDATE"
+          },
+          {
+            "path": "libs-base/layout-ui-main-menu/tsconfig.spec.json",
+            "type": "UPDATE"
+          },
+          {
+            "path": "libs-base/layout-ui-main-bar/tsconfig.spec.json",
+            "type": "UPDATE"
+          },
+          {
+            "path": "libs/exploration-data/tsconfig.spec.json",
+            "type": "UPDATE"
+          },
+          {
+            "path": "apps/nx-exploration/tsconfig.spec.json",
+            "type": "UPDATE"
+          }
+        ],
+        "ref": "695bb610f635ba4ac66f4fa62a4a9a80801d346a",
+        "nextSteps": []
+      }
+    }
   }
 }
