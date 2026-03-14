@@ -206,7 +206,7 @@
     "targetVersion": "latest",
     "confirmedPackageUpdates": true,
     "runningMigrations": [
-      "update-module-resolution-22-2-0"
+      "update-typescript-lib-22-2-0"
     ],
     "completedMigrations": {
       "22-0-0-release-version-config-changes": {
@@ -299,7 +299,51 @@
             "type": "UPDATE"
           }
         ],
-        "ref": "695bb610f635ba4ac66f4fa62a4a9a80801d346a",
+        "ref": "65f3555b717b89b136be23b286a2dea68d13fed5",
+        "nextSteps": []
+      },
+      "update-typescript-lib-22-2-0": {
+        "type": "successful",
+        "name": "update-typescript-lib-22-2-0",
+        "changedFiles": [
+          {
+            "path": "libs/exploration-feature-affichage-descriptions/tsconfig.json",
+            "type": "UPDATE"
+          },
+          {
+            "path": "libs/pilotage/avancement-ui-timeline-objectifs/tsconfig.json",
+            "type": "UPDATE"
+          },
+          {
+            "path": "libs/pilotage/architecture-feature-avancement/tsconfig.json",
+            "type": "UPDATE"
+          },
+          {
+            "path": "libs/pilotage/avancement-feature-synthese/tsconfig.json",
+            "type": "UPDATE"
+          },
+          {
+            "path": "libs/pilotage/signal-feature-avancement/tsconfig.json",
+            "type": "UPDATE"
+          },
+          {
+            "path": "libs-base/layout-ui-main-menu/tsconfig.json",
+            "type": "UPDATE"
+          },
+          {
+            "path": "libs-base/layout-ui-main-bar/tsconfig.json",
+            "type": "UPDATE"
+          },
+          {
+            "path": "libs/exploration-data/tsconfig.json",
+            "type": "UPDATE"
+          },
+          {
+            "path": "apps/nx-exploration/tsconfig.json",
+            "type": "UPDATE"
+          }
+        ],
+        "ref": "1f7436e3107bd734b6879eb126a36a04fe2fcc33",
         "nextSteps": []
       }
     }
